@@ -2,7 +2,7 @@
   "name": "what-is-your-racket-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hiroyuki-j.github.io/What-is-Your-Racket.com",
+  "homepage": "https://hiroyuki-j.github.io/What-is-Your-Racket.com/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
