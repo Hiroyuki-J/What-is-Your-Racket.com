@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/What-is-Your-Racket.com/static/css/main.f8709012.css",
+    "main.js": "/What-is-Your-Racket.com/static/js/main.819887b5.js",
+    "static/js/453.d30d00c0.chunk.js": "/What-is-Your-Racket.com/static/js/453.d30d00c0.chunk.js",
+    "index.html": "/What-is-Your-Racket.com/index.html",
+    "main.f8709012.css.map": "/What-is-Your-Racket.com/static/css/main.f8709012.css.map",
+    "main.819887b5.js.map": "/What-is-Your-Racket.com/static/js/main.819887b5.js.map",
+    "453.d30d00c0.chunk.js.map": "/What-is-Your-Racket.com/static/js/453.d30d00c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8709012.css",
+    "static/js/main.819887b5.js"
+  ]
+}
