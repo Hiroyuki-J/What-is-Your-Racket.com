@@ -1,0 +1,254 @@
+/* 全体的なスタイル */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.App {
+  text-align: center;
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* タイトルと開始画面 */
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.green-text {
+  color: #4caf50;
+}
+
+.start-text {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* 質問画面の共通スタイル */
+.question-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.question-container h2 {
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option-group button {
+  width: 100%;
+  padding: 18px;
+  font-size: 1.1rem;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  text-align: left;
+}
+
+.option-group button:hover {
+  background-color: #e0e0e0;
+}
+
+/* 選択されたボタン */
+.option-group button.selected {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* 選択肢の説明文 */
+.description {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+.option-group button.selected .description {
+  color: white;
+}
+
+/* 次へボタン */
+.next-button {
+  margin-top: 30px;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-button:hover {
+  background-color: #0056b3;
+}
+
+/* 結果表示画面 */
+.result-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.result-container h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.recommendation-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.recommendation-list li {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* ユーザーの回答を表示する部分 */
+.user-answers {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.user-answers h3 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.user-answers p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.user-answers strong {
+  color: #333;
+}
+
+/* 「もう一度診断する」ボタンのスタイル */
+.reset-button {
+  margin-top: 30px;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #45a049;
+}
+
+/* ラケット詳細画面 */
+.detail-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.detail-container h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.detail-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.model-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.model-table th, .model-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.model-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.tech-info {
+    margin-top: 40px;
+}
+
+.tech-info h3 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.tech-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.tech-info-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 水平方向の中央揃え */
+}
